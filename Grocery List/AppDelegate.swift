@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window!.frame = CGRectMake(5, 5, window!.frame.size.width-10, window!.frame.size.height-10)
+        window!.layer.cornerRadius = 10.0
+        window!.layer.masksToBounds = true
+        window!.layer.opaque = false
+
         return true
     }
 

@@ -14,6 +14,8 @@
 		10D2639A1D57D3F2009D0C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D263991D57D3F2009D0C80 /* Assets.xcassets */; };
 		10D2639D1D57D3F2009D0C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D2639B1D57D3F2009D0C80 /* LaunchScreen.storyboard */; };
 		10D263A81D57D3F2009D0C80 /* Grocery_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D263A71D57D3F2009D0C80 /* Grocery_ListTests.swift */; };
+		10D263B31D581A93009D0C80 /* GBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D263B21D581A93009D0C80 /* GBaseViewController.swift */; };
+		10D263B51D59B816009D0C80 /* GCreateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D263B41D59B816009D0C80 /* GCreateListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10D2638C1D57D3F2009D0C80 /* Grocery List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocery List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D2638C1D57D3F2009D0C80 /* Grocery 📝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocery 📝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D2638F1D57D3F2009D0C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10D263911D57D3F2009D0C80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10D263941D57D3F2009D0C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		10D263A31D57D3F2009D0C80 /* Grocery ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grocery ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D263A71D57D3F2009D0C80 /* Grocery_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery_ListTests.swift; sourceTree = "<group>"; };
 		10D263A91D57D3F2009D0C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D263B21D581A93009D0C80 /* GBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBaseViewController.swift; sourceTree = "<group>"; };
+		10D263B41D59B816009D0C80 /* GCreateListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCreateListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,7 @@
 		10D2638D1D57D3F2009D0C80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				10D2638C1D57D3F2009D0C80 /* Grocery List.app */,
+				10D2638C1D57D3F2009D0C80 /* Grocery 📝.app */,
 				10D263A31D57D3F2009D0C80 /* Grocery ListTests.xctest */,
 			);
 			name = Products;
@@ -79,8 +83,8 @@
 		10D2638E1D57D3F2009D0C80 /* Grocery List */ = {
 			isa = PBXGroup;
 			children = (
+				10D263B61D59B822009D0C80 /* View Controller */,
 				10D2638F1D57D3F2009D0C80 /* AppDelegate.swift */,
-				10D263911D57D3F2009D0C80 /* ViewController.swift */,
 				10D263931D57D3F2009D0C80 /* Main.storyboard */,
 				10D263991D57D3F2009D0C80 /* Assets.xcassets */,
 				10D2639B1D57D3F2009D0C80 /* LaunchScreen.storyboard */,
@@ -97,6 +101,16 @@
 				10D263A91D57D3F2009D0C80 /* Info.plist */,
 			);
 			path = "Grocery ListTests";
+			sourceTree = "<group>";
+		};
+		10D263B61D59B822009D0C80 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				10D263B41D59B816009D0C80 /* GCreateListViewController.swift */,
+				10D263B21D581A93009D0C80 /* GBaseViewController.swift */,
+				10D263911D57D3F2009D0C80 /* ViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +130,7 @@
 			);
 			name = "Grocery List";
 			productName = "Grocery List";
-			productReference = 10D2638C1D57D3F2009D0C80 /* Grocery List.app */;
+			productReference = 10D2638C1D57D3F2009D0C80 /* Grocery 📝.app */;
 			productType = "com.apple.product-type.application";
 		};
 		10D263A21D57D3F2009D0C80 /* Grocery ListTests */ = {
@@ -201,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D263921D57D3F2009D0C80 /* ViewController.swift in Sources */,
+				10D263B31D581A93009D0C80 /* GBaseViewController.swift in Sources */,
 				10D263901D57D3F2009D0C80 /* AppDelegate.swift in Sources */,
+				10D263B51D59B816009D0C80 /* GCreateListViewController.swift in Sources */,
 				10D263981D57D3F2009D0C80 /* Grocery_List.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -320,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -332,9 +348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Grocery List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rohit.GroceryList.Grocery-List";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Grocery 📝";
 			};
 			name = Debug;
 		};
@@ -343,9 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Grocery List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rohit.GroceryList.Grocery-List";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Grocery 📝";
 			};
 			name = Release;
 		};
