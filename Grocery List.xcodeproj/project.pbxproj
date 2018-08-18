@@ -410,6 +410,7 @@
 				10D263AE1D57D3F2009D0C80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10D263AF1D57D3F2009D0C80 /* Build configuration list for PBXNativeTarget "Grocery ListTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +419,7 @@
 				10D263B11D57D3F2009D0C80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
