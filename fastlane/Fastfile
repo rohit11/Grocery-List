@@ -17,7 +17,8 @@ default_platform(:ios)
 
 platform :ios do
   desc "Description of what the lane does"
-  lane :custom_lane do
+  lane :Grocery_List do
     # add actions here: https://docs.fastlane.tools/actions
+    puts("this is my first Grocery_List 🚀 lane")
   end
 end
